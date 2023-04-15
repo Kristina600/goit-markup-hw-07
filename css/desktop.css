@@ -1,0 +1,233 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1158px;
+  }
+
+  /* ----header------ */
+  .header-logo {
+    margin: 25px 0;
+    margin-right: 72px;
+  }
+
+  .auth-nav {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .auth-nav .contact-list {
+    display: flex;
+    align-items: center;
+  }
+
+  .auth-nav .item:not(:first-child) {
+    margin-left: 50px;
+  }
+
+  .header-btn {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  /* ---------------Hero------------------- */
+
+  .hero {
+    padding-top: 190px;
+    padding-bottom: 190px;
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../image/hero-bg/hero-desk.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../image/hero-bg/hero-desk-2x@2x.jpg);
+  }
+}
+
+
+
+  .title-hero {
+    margin-bottom: 48px;
+  }
+
+  /* ---------------about details ----------------------*/
+
+  .visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+
+  .about-details {
+    background: var(--color-details);
+    padding: 120px 0;
+  }
+
+  .details-list {
+    display: flex;
+  }
+
+  .details-list > .item:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  .list-title {
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    text-transform: uppercase;
+    color: var(--color-text);
+
+    margin-bottom: 10px;
+  }
+
+  .description-details {
+    line-height: calc(24 / 14);
+    color: var(--color-mailto-tel-details);
+  }
+
+  /* ------spesial-icons------- */
+
+  .logo-icons {
+    background-color: var(--color-section-team);
+    width: 264px;
+    height: 120px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+  }
+
+  .special-icon {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* --------------------Employment------------------- */
+
+  .employment {
+    background: var(--color-background-title);
+    padding-bottom: 120px;
+  }
+
+  .title-about {
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    color: var(--color-text);
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .list-employment {
+    display: flex;
+    padding-left: 0;
+  }
+
+  img {
+    display: block;
+  }
+
+  .list-employment > .item:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  .list-employment > .item {
+    width: 360px;
+  }
+
+  .list-employment .item {
+    position: relative;
+  }
+
+  .description-employment {
+    width: 360px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 80%);
+    position: absolute;
+    bottom: 0;
+  }
+
+  .employment-text {
+    padding-top: 27px;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-title-hero);
+  }
+
+  /* ------------------------Team---------------------- */
+
+  .team-list {
+    display: flex;
+    padding-left: 0px;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0px;
+  }
+
+  .team-item:not(:first-child) {
+    padding: 0px;
+    margin-left: 24px;
+  }
+
+  /* --------------------client--------------------- */
+
+  .client-list {
+    display: flex;
+    padding: 0;
+  }
+
+  .client-item:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  /* ------------Footer-------------- */
+
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer .container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .footer-icons {
+    margin-left: 120px;
+  }
+
+  .footer-icons .social-icons {
+    display: flex;
+  }
+
+  .footer-form {
+    margin-left: 80px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+}

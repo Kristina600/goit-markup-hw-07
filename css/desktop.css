@@ -226,6 +226,19 @@
     justify-content: center;
   }
 
+  .footer-logo,
+  .mail {
+    display: block;
+  }
+
+  .adress-contact-list {
+    display: block;
+  }
+
+  .title-icons {
+    text-align: left;
+  }
+
   .footer-icons {
     margin-left: 70px;
   }

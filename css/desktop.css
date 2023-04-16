@@ -1,17 +1,17 @@
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1158px;
+    width: 1170px;
   }
 
   /* ----header------ */
   .header-logo {
-    margin: 25px 0;
-    margin-right: 72px;
+    margin-right: 92px;
   }
 
   .auth-nav {
     display: flex;
     margin-left: auto;
+    padding: 0;
   }
 
   .auth-nav .contact-list {
@@ -34,33 +34,33 @@
   /* ---------------Hero------------------- */
 
   .hero {
-    padding-top: 190px;
-    padding-bottom: 190px;
+    width: 100%;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-image: linear-gradient(
         to right,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
       ),
       url(../image/hero-bg/hero-desk.jpg);
   }
 
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(
-        to right,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../image/hero-bg/hero-desk-2x@2x.jpg);
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../image/hero-bg/hero-desk-2x@2x.jpg);
+    }
   }
-}
-
-
 
   .title-hero {
-    margin-bottom: 48px;
+    font-size: 44px;
+    line-height: calc(60 / 44);
   }
 
   /* ---------------about details ----------------------*/
@@ -80,20 +80,15 @@
 
   .about-details {
     background: var(--color-details);
-    padding: 120px 0;
+    padding: 94px 0;
   }
 
   .details-list {
     display: flex;
   }
 
-  .details-list > .item:not(:last-child) {
-    margin-right: 24px;
-  }
-
   .list-title {
-    font-size: 20px;
-    line-height: calc(24 / 20);
+    line-height: calc(16 / 14);
     text-transform: uppercase;
     color: var(--color-text);
 
@@ -109,13 +104,16 @@
 
   .logo-icons {
     background-color: var(--color-section-team);
-    width: 264px;
+    width: 270px;
     height: 120px;
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 4px;
+  }
+  .details-list > .item {
+    width: calc((100%-24px) / 4);
   }
 
   .special-icon {
@@ -127,7 +125,7 @@
 
   .employment {
     background: var(--color-background-title);
-    padding-bottom: 120px;
+    padding: 94px 0;
   }
 
   .title-about {
@@ -143,16 +141,12 @@
     padding-left: 0;
   }
 
-  img {
-    display: block;
-  }
-
   .list-employment > .item:not(:last-child) {
-    margin-right: 24px;
+    margin-right: 30px;
   }
 
   .list-employment > .item {
-    width: 360px;
+    width: 370px;
   }
 
   .list-employment .item {
@@ -178,12 +172,18 @@
 
   /* ------------------------Team---------------------- */
 
+  .about-team {
+    padding: 94px 0;
+  }
   .team-list {
     display: flex;
     padding-left: 0px;
     justify-content: space-between;
-    list-style: none;
     margin: 0px;
+  }
+
+  .team-list .item {
+    width: 270px;
   }
 
   .team-item:not(:first-child) {
@@ -193,9 +193,21 @@
 
   /* --------------------client--------------------- */
 
+  .clients {
+    padding: 94px 0;
+  }
+
   .client-list {
     display: flex;
     padding: 0;
+  }
+
+  .client-title {
+    margin-bottom: 50px;
+  }
+
+  .client-link {
+    width: 170px;
   }
 
   .client-item:not(:last-child) {
@@ -205,29 +217,52 @@
   /* ------------Footer-------------- */
 
   .footer {
-    padding: 100px 0;
+    padding: 60px 0;
   }
 
   .footer .container {
     display: flex;
     flex-wrap: nowrap;
+    justify-content: center;
   }
 
   .footer-icons {
-    margin-left: 120px;
+    margin-left: 70px;
   }
 
   .footer-icons .social-icons {
     display: flex;
   }
 
-  .footer-form {
-    margin-left: 80px;
+  form {
+    margin-left: auto;
+  }
+
+  .input-email {
+    width: 358px;
+  }
+
+  .buttons .input-email {
+    margin-right: 12px;
   }
 
   .buttons {
     display: flex;
-    flex-wrap: nowrap;
   }
 
+  .modal {
+    width: 100%;
+    max-width: 528px;
+    height: 581px;
+  }
+
+  .checkbox-agree {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
+
+  .check-text {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
 }

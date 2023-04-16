@@ -34,8 +34,8 @@ p {
 body {
   font-family: 'Roboto', sans-serif;
   background: var(--color-background-title);
-  font-size: 16px;
-  letter-spacing: 0.04em;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 .link {
@@ -46,23 +46,35 @@ body {
   list-style: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*------- header -----*/
+
 .page-header {
   border-bottom: 1px solid #ececec;
+}
+
+.header-logo {
+  display: flex;
 }
 
 .logo-web {
   font-family: 'Raleway';
   font-weight: 700;
-  font-size: 18px;
-  line-height: calc(21 / 18);
+  font-size: 24px;
+  line-height: calc(28 / 24);
   color: var(--color-logo-header-hover);
 }
 
 .logo-studio {
   font-family: 'Raleway';
   font-weight: 700;
-  font-size: 18px;
-  line-height: calc(21 / 18);
+  font-size: 24px;
+  line-height: calc(28 / 24);
   color: var(--color-logo-studio);
 }
 
@@ -75,17 +87,11 @@ body {
 
 .hero {
   background: #c4c4c4;
-  padding-top: 112px;
-  padding-bottom: 112px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-top: 0;
   text-align: center;
 
-  background-image: linear-gradient(
-      to right,
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../image/hero-bg/hero-img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   margin-right: auto;
@@ -93,29 +99,16 @@ body {
   background-size: cover;
 }
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(
-        to right,
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url(../image/hero-bg/hero-2@2x.jpg);
-  }
-}
-
 .title-hero {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: calc(40 / 36);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: calc(42 / 26);
   color: var(--color-background-title);
   text-align: center;
 
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-bottom: 72px;
+  margin-bottom: 30px;
 }
 
 .button {
@@ -168,11 +161,21 @@ body {
 
 .about-details {
   background: var(--color-details);
-  padding: 96px 0;
+  padding: 60px 0;
 }
 
 .details-list {
   padding: 0;
+}
+
+.list-title {
+  text-align: center;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: var(--color-text);
+
+  margin-bottom: 10px;
 }
 
 .description-details {
@@ -180,8 +183,9 @@ body {
   color: var(--color-mailto-tel-details);
 }
 
-.logo-icons {
-  display: none;
+.special-icon {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ----------------Employment------------------- */
@@ -189,7 +193,7 @@ body {
 /* ------------------------Team--------------- */
 
 .about-team {
-  padding: 96px 0;
+  padding: 60px 0;
   background: var(--color-section-team);
 }
 
@@ -228,8 +232,8 @@ body {
 }
 
 .team-list .item {
-  width: 264px;
-  border-radius: 0, 0, 4px, 4px;
+  width: 100%;
+  border-radius: 0 0 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   padding: 0px;
@@ -288,7 +292,7 @@ body {
 /* ----------client---------- */
 
 .clients {
-  padding: 96px 0;
+  padding: 60px 0;
 }
 
 .client-title {
@@ -296,11 +300,11 @@ body {
   line-height: 42px;
   text-align: center;
   color: var(--color-text);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .client-link {
-  width: 190px;
+  width: 210px;
   height: 92px;
   color: #afb1b8;
   border: 1px solid #afb1b8;
@@ -328,7 +332,7 @@ body {
 /* ------------Footer-------------- */
 
 .footer {
-  padding: 96px 0;
+  padding: 60px 0;
   background: var(--color-background-hero-footer);
 }
 
@@ -340,8 +344,8 @@ body {
 
 .foter-studio {
   font-family: 'Raleway';
-  font-size: 18px;
-  line-height: calc(31 / 26);
+  font-size: 24px;
+  line-height: calc(28 / 24);
   color: var(--color-background-title);
 }
 
@@ -429,7 +433,6 @@ body {
 
 .form-title {
   margin-bottom: 20px;
-  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -440,8 +443,8 @@ body {
 }
 
 .input-email {
-  width: 398px;
-  height: 40px;
+  width: 100%;
+  height: 50px;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -474,19 +477,9 @@ body {
   margin-left: 10px;
 }
 
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.footer-btn {
-  margin-top: 16px;
-}
-
 .footer-btn {
   padding-right: 28px;
-  height: 40px;
+  height: 50px;
 }
 
 /* ------------------------modal window---------------------------- */
@@ -514,9 +507,9 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(0);
-
-  width: 392px;
-  height: 586px;
+  width: 100%;
+  max-width: 450px;
+  height: 609px;
 
   transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -532,10 +525,10 @@ body {
   justify-content: center;
   cursor: pointer;
   align-items: center;
-  top: 24px;
-  right: 24px;
-  width: 24px;
-  height: 24px;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
@@ -557,18 +550,15 @@ body {
 /* ----------------------------Modal form------------------------------ */
 
 .modal-application {
-  padding-top: 72px;
-  padding-bottom: 24px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding: 40px;
 }
 
 .modal-title {
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 
   font-weight: 500;
-  font-size: 16px;
-  line-height: calc(24 / 16);
+  font-size: 20px;
+  line-height: calc(30 / 20);
   text-align: center;
   letter-spacing: 0.02em;
 
@@ -596,7 +586,7 @@ body {
 
 .input-icon {
   position: relative;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .input-icon input {
@@ -629,7 +619,7 @@ body {
 .input-comment {
   width: 100%;
   height: 120px;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
@@ -662,7 +652,7 @@ body {
 
 .check-line {
   display: flex;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 }
 
 .checkbox-agree {
@@ -690,8 +680,7 @@ body {
 
 .checkbox-agree {
   font-size: 12px;
-  letter-spacing: 0;
-  line-height: 16px;
+  line-height: 14px;
   color: #757575;
 }
 
@@ -715,9 +704,9 @@ body {
   fill: #ffffff;
 }
 
-@media screen and (min-width: 428px) {
+@media screen and (min-width: 480px) {
   .container {
-    width: 428px;
+    width: 480px;
   }
 }
 
@@ -767,11 +756,14 @@ body {
   }
 
   .mobile {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     position: relative;
-    padding-top: 72px;
+    padding-top: 23px;
     padding-bottom: 48px;
-    padding-left: 30px;
-    padding-right: 28px;
+    padding-left: 16px;
+    padding-right: 15px;
   }
 
   .mobile-close-btn {
@@ -793,7 +785,7 @@ body {
 
   /* navigation */
   .mobile-nav {
-    margin-bottom: 284px;
+    margin-bottom: auto;
   }
 
   .mobile-list {
@@ -830,7 +822,6 @@ body {
     align-items: flex-start;
     padding: 0px;
     gap: 40px;
-    margin-bottom: auto;
   }
 
   .mobile-contact-list {
@@ -860,47 +851,13 @@ body {
     letter-spacing: 0.02em;
   }
 
-  /* Spesials */
-
-  .details-list {
-    width: 356px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 72px;
-    padding: 0;
-    margin: auto;
-  }
-
-  .list-title {
-    text-align: center;
-    font-size: 36px;
-    line-height: calc(40 / 36);
-    text-transform: uppercase;
-    color: var(--color-text);
-
-    margin-bottom: 10px;
-  }
-
-  .employment {
-    display: none;
-  }
-
-  .about-team .team-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 72px;
-    padding: 0;
-    margin: 0;
-  }
+  
 
   /* social-icon */
 
   .social-menu-icons {
     padding: 0;
     display: flex;
-    justify-content: center;
     margin-top: 48px;
   }
 
@@ -937,6 +894,62 @@ body {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
+  .hero {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../image/hero-bg/hero-img.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../image/hero-bg/hero-2@2x.jpg);
+    }
+  }
+
+  /* Spesials */
+
+  .details-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+    margin: auto;
+  }
+
+  .logo-icons {
+    background-color: var(--color-section-team);
+    width: 100%;
+    height: 120px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+  }
+
+  .employment {
+    display: none;
+  }
+
+  .about-team .team-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+  }
+
   /* client */
 
   .clients .client-list {
@@ -944,7 +957,7 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    column-gap: 16px;
+    column-gap: 30px;
     row-gap: 72px;
     padding: 0;
   }
@@ -955,6 +968,22 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 72px;
+    gap: 60px;
+  }
+
+ .footer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer-btn {
+    margin-top: 16px;
   }
 }

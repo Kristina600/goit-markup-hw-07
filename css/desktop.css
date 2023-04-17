@@ -132,7 +132,7 @@
   }
 
   .description-employment {
-    width: 360px;
+    width: 100%;
     height: 70px;
     background-color: rgba(47, 48, 58, 80%);
     position: absolute;
